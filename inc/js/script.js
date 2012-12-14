@@ -1,14 +1,11 @@
 jQuery(document).ready( function($){
 
-    var win_height = $(window).height();
+    var win_height = $(document).height() - $(window).height();
     var box_width = $('#bar').width();
 
-    console.log( 'win height: ' + win_height );
-
     $(window).scroll( function(){
-        var pos = ( win_height / $(window).scrollTop() ) * box_width / 100;
-        console.log( $(window).scrollTop() );
-        $('#bar span').animate({left: pos + '%' }, 100 );
+        var pos = ( $(window).scrollTop() / win_height ) * ( box_width - $('#bar span').width() );
+        $('#bar span').css({ left: pos + 'px' });
     } );
 
 } );

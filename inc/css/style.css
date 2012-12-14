@@ -1,3 +1,3 @@
 #bar { margin:100px; width:600px; height:50px; background-color:blue; position:fixed; z-index:5; }
-#bar span { width:10px; height:10px; background-color:cyan; position:absolute; top:20px; left:0; z-index:10; border:1px solid red; }
-#fill { height:1800px; }
+#bar span { width:10px; height:10px; background-color:cyan; position:absolute; top:20px; left:0; z-index:10; }
+#fill { height:6800px; }
